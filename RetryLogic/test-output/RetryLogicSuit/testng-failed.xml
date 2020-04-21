@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RetryLogicSuit]">
+  <listeners>
+    <listener class-name="analyzer.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="RetryMultipleTestCases(failed)">
+    <classes>
+      <class name="mytests.MyTests">
+        <methods>
+          <include name="Test3"/>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- mytests.MyTests -->
+    </classes>
+  </test> <!-- RetryMultipleTestCases(failed) -->
+</suite> <!-- Failed suite [RetryLogicSuit] -->
